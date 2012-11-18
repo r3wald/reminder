@@ -1,0 +1,27 @@
+# language: de
+Funktionalität: Internal operations
+  In order to stay secret
+  As a secret organization
+  We need to be able to erase past agents' memory
+
+  Grundlage:
+    [Angenommen|Gegeben sei] there is agent A
+    Und there is agent B
+
+  Szenario: Erasing agent memory
+    [Angenommen|Gegeben sei] there is agent J
+    Und there is agent K
+    Wenn I erase agent K's memory
+    Dann there should be agent J
+    Aber there should not be agent K
+
+  Szenariogrundriss: Erasing other agents' memory
+    [Angenommen|Gegeben sei] there is agent <agent1>
+    Und there is agent <agent2>
+    Wenn I erase agent <agent2>'s memory
+    Dann there should be agent <agent1>
+    Aber there should not be agent <agent2>
+
+      Beispiele:
+      | agent1 | agent2 |
+      | D      | M      |
