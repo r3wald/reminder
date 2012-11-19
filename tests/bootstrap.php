@@ -1,6 +1,5 @@
 <?php
 
 $loader = require __DIR__ . '/../vendor/autoload.php';
-
-$loader->add('App',__DIR__.'/../src');
+$loader->add('Reminder',__DIR__.'/../src');
 

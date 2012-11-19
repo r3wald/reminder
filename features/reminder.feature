@@ -6,14 +6,14 @@ Funktionalität: Erster Aufruf
     Angenommen das Programm wurde nie zuvor aufgerufen
 
   Szenario: erster Aufruf
-    Angenommen ich rufe "bin/remind" auf
+    Angenommen ich rufe "./remind" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     OK
     """
 
 Szenario: Hilfe
-    Angenommen ich rufe "bin/remind help" auf
+    Angenommen ich rufe "./remind help" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     remind help
@@ -28,28 +28,28 @@ Szenario: Hilfe
     """
 
   Szenario: neuer Termin tomorrow
-    Angenommen ich rufe "bin/remind me tomorrow 'Termin mit Herrn Andersen'" auf
+    Angenommen ich rufe "./remind me tomorrow 'Termin mit Herrn Andersen'" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     OK
     """
 
   Szenario: neuer Termin tomorrow
-    Angenommen ich rufe "bin/remind me today 9:30 'Tägliches Meeting'" auf
+    Angenommen ich rufe "./remind me today 9:30 'Tägliches Meeting'" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     OK
     """
 
   Szenario: neuer Termin new years eve
-    Angenommen ich rufe "bin/remind me 31.12.2012 23:59 'Gleich knallt es'" auf
+    Angenommen ich rufe "./remind me 31.12.2012 23:59 'Gleich knallt es'" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     OK
     """
 
   Szenario: alle Termine auflisten
-    Angenommen ich rufe "bin/remind show" auf
+    Angenommen ich rufe "./remind show" auf
     Dann soll folgende Ausgabe erscheinen:
     """
     1 | 19.11.2012 |  9:30 | Tägliches Meeting
