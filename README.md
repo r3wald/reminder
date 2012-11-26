@@ -62,3 +62,33 @@ Gewünscht ist ein simples Kommandozeilenprogramm (Linux), das Termine verwalten
 * Installation
 * verschiedene "Repositories"
 
+## Struktur
+--+- src/
+  |
+  +--- Reminder/
+     |
+     +--- Event/
+     |  |
+     |  +--- Object.php						class Reminder\Event\Object implements \Reminder\Interface\Object {}
+     |  |
+     |  +--- Service/
+     |     |
+     |     +--- Abstract.php				class Reminder\Event\Service\Abstract implements \Reminder\Interface\Service {}
+     |     |
+     |     +--- File.php					class Reminder\Event\Service\File extends \Reminder\Event\Service\Abstract {}
+     |     |
+     |     +--- Database.php				class Reminder\Event\Service\Database extends \Reminder\Event\Service\Abstract {}
+     |
+     +--- Exception/
+     |  |
+     |  +--- RecordNotFoundException.php	class Reminder\RecordNotFoundException extends \Exception {}
+     |  |
+     |  +--- DuplicateRecordException.php	class Reminder\DuplicateRecordException extends \Exception {}
+     |
+     +--- Interface/
+        |
+        +--- Service.php					interface Reminder\Interface\Service {}
+        |
+        +--- Object.php						interface Reminder\Interface\Object {}
+
+
