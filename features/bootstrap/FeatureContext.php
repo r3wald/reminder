@@ -49,7 +49,8 @@ class FeatureContext extends BehatContext
     public function ichRufeAuf($arg1)
     {
         $command = $arg1;
-        $this->output = exec($command);
+        exec($command, $this->output);
+        $this->output = join("\n", $this->output);
     }
 
     /**
